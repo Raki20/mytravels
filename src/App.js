@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Travel from "./Travel";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <div>
+      <Travel
+        destination="Lisbon"
+        country="Portugal"
+        photo="https://www.aworldtotravel.com/wp-content/uploads/2017/07/baixa-and-castle-things-lisbon-is-famous-for-a-world-to-travel.jpg"
+        distance="2000 miles"
+      />
+      <Travel
+        destination="Paris"
+        country="France"
+        photo="https://kids.nationalgeographic.com/content/dam/kids/photos/Countries/A-G/france-eiffel-tower.ngsversion.1396531559251.adapt.1900.1.jpg"
+        distance="3500 miles"
+      />
+    </div>
     );
   }
 }
